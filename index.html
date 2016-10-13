@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Under Construction - robfarb.devSite</title>
+	<title>Home - Robert Farb</title>
 	<link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="animate.min.css">
+	<link rel="shortcut icon" href="src/img/logoImg.jpg">
 	<script src="https://use.fontawesome.com/9fc65e5e0f.js"></script>
 	<script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
 <!--	<script type="text/javascript">
@@ -16,31 +18,31 @@
 				});
 	</script>-->
 </head>
-
 <body>
-</body>
-<!-- TEMPORARY UNDER CONSTRUCTION MESSAGE-->
-<!--	<div id="content-wrapper">
-		<h1 class="animated zoomInDown">Site Under Construction!</h1>
-		&lt;!&ndash;Site Under Construction Slide In>&ndash;&gt;
-	</div>-->
+<!-- TEMPORARY UNDER CONSTRUCTION PORTION
 	<div id="content-wrapper">
-		<header id="site-header">
-			<a id="site-brand" class="no-effect" href="/">
-				<!--<img src="Input a logo here">-->
-			</a>
+		&lt;!&ndash;<h1 class="animated zoomInDown">Site Under Construction!</h1>
+		<h2 class="animated zoomInUp">You can contact me using the links below.</h2>&ndash;&gt;
+		&lt;!&ndash;Site Under Construction Slide In>&ndash;&gt;
+-->
+	<div id="content-wrapper">
+		<div class="container">
+			<header id="site-header">
+				<a id="site-brand" class="no-effect" href="index.html">
+					<img src="src/img/logoImg.jpg"/>
+				</a>
+				<nav id="site-nav">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="/projects">Projects</a>
+					<a href="/books">Contact</a>
+				</nav>
+			</header>
 			<h1>Welcome, I'm Robert Farb</h1>
-			<p class="opening">A determined web developer born in Los Angeles, living in Ann Arbor Michigan.</p>
+			<p class="opening">A dedicated web developer born in Los Angeles, living in Ann Arbor, Michigan.</p>
 			<p>Let me make you a beautiful, responsive site created with a passion for design and attention to detail.</p>
-			<nav id="site-nav">
-				<a href="/">Home</a>
-				<a href="/about">About</a>
-				<a href="/projects">Projects</a>
-			</nav>
-		</header>
+		</div>
 	</div>
-
-
 	<footer id="footer">
 		<p class="contact-links">
 			<a href="https://github.com/Robertfarb" class="fa fa-github fa-2x no-effect"></a>
@@ -49,5 +51,22 @@
 		</p>
 		<p>&copy;2016 Robert Farb</p>
 	</footer>
+<!--	<script>
+		(function()
+		{
+			var path = window.location.pathname,
+					links = document.getElementById('site-nav').children;
+			// Mark active link
+			for (var i = 0; i < links.length; i++)
+			{
+				var link = links[i],
+						href = link.getAttribute('href');
+				if (href === path)
+				{
+					link.className += (link.className ? ' ' : '') + 'active';
+				}
+			}
+		})();
+	</script>-->
 </body>
 </html>

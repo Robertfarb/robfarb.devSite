@@ -10,12 +10,17 @@
 /* Base files. */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif !important;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%; }
 
 body {
     margin: 0; }
+
+h1{
+    text-align: left;
+}
+
 
 article,
 aside,
@@ -204,7 +209,7 @@ body {
     font-size: 1.5em;
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #222; }
 
 a {
@@ -737,7 +742,7 @@ form {
     display: block;
     position: absolute;
     z-index: 1;
-    background: #F45923;
+    background: #0091b7;
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -754,6 +759,7 @@ form {
 #site-nav {
     flex: 1; }
 #site-nav a {
+    cursor: pointer;
     display: inline-block;
     position: relative;
     color: #96a5b2;
@@ -776,7 +782,7 @@ body {
 
 ul {
     list-style-type: disc;
-    background: #f7f8f9;
+    background: #f4f5f6;
     padding: 20px; }
 
 li {
@@ -807,7 +813,7 @@ a:not(.no-effect):hover:after, a:not(.no-effect).active:after {
     width: 100%; }
 
 h1 {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 900;
     margin-bottom: 3rem;
     margin-top: 5rem; }
@@ -826,7 +832,9 @@ p {
 .opening {
     font-size: 22px;
     line-height: 1.8;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    letter-spacing: 0.45px;
+}
 
 blockquote {
     padding-left: 20px;
@@ -849,8 +857,10 @@ body {
     background: #f7f8f9; }
 
 #content-wrapper {
-    background: #fff;
-    padding: 70px 40px; }
+    /*  Change The background color once construction page is done  */
+    background: #ffffff;
+    padding: 70px 40px;
+    height: 58vh;}
 
 footer {
     border-top: 1px solid #ebeef0;
@@ -865,10 +875,13 @@ footer p a[class*='fa'] {
     color: #96a5b2;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 10px; }
+    margin: 0 10px;
+    cursor: pointer}
 footer p a[class*='fa']:hover {
     color: #4078C0; }
-
+.fa-2x{
+    font-size: 2.5em !important;
+}
 .shadow {
     box-shadow: 0 0 0 1px rgba(39, 44, 48, 0.05), 0 2px 7px 1px rgba(39, 44, 48, 0.16); }
 
